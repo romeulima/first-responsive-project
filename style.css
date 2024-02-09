@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-family: 'Source Serif Pro', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    color: #A54328;
+}
+
+main{
+    max-width: 32rem;
+    margin-inline: auto;
+    padding: 5.4rem 3.6rem 7rem;
+
+    box-sizing: content-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+h1, h2{
+    font-size: clamp(2.8rem, 2vw + 1rem, 4rem);
+    line-height: clamp(3.6rem, 2vw + 1rem, 5rem);
+}
+
+.ingredients h2{
+    padding-bottom: 2.4rem;
+}
+
+img{
+    width: 100%;
+    margin-block: 3.2rem;
+}
+
+p, li, strong{
+    font-size: clamp(1.4rem, 1vw + .4rem, 2rem);
+    line-height: clamp(1.8rem, 1vw + 1rem, 2.5rem);
+}
+
+ul, ol{
+    padding-left: 2.4rem;
+}
+
+ul{
+    padding-bottom: 2.4rem;
+}
+
+button{
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+
+    background-color: #A54328;
+    color: white;
+
+    border: none;
+    border-radius: .6rem;
+
+    padding: .8rem 1.2rem;
+
+    margin-top: 2.4rem;
+}
+
+
+@media (min-width: 1120px) {
+    main{
+        max-width: fit-content;
+        flex-direction: row;
+        gap: 19rem;
+
+        padding: 9rem 8rem;
+    }
+
+    .recipe{
+        max-width: 43.5rem;
+    }
+
+    .ingredients{
+        max-width: 52.5rem;
+    }
+
+    /* h1, h2{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    p, li, strong{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    } */
+
+    button{
+        padding: 1rem 2rem;
+
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+
+}
